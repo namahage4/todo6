@@ -34,7 +34,6 @@
   </form>
   <div class="todo-table">
     <table class="todo-table__inner">
-      
       <tr class="todo-table__row">
         <th class="todo-table__header">Todo</th>
       </tr>
