@@ -15,8 +15,13 @@ class CreateTodosTable extends Migration
     {
         Schema::create('todos', function (Blueprint $table) {
             $table->id();
+            // $table->foreignId('category_id')->constrained()->cascadeOnDelete();
             $table->string('content', 20);
-            $table->timestamps();
+            // 
+            $table->unsignedBigInteger('category_id')->nullable();
+            // 
+            $table->timestamp('created_at')->useCurrent()->nullable();
+            $table->timestamp('updated_at')->useCurrent()->nullable();
         });
     }
 

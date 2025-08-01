@@ -6,6 +6,8 @@
     margin: 0 auto;
     padding: 20px 15px;
     max-width: 1230px;
+    display: flex;
+    justify-content: space-between;
   }
   
   .header__logo {
@@ -14,4 +16,7 @@
     font-weight: bold;
     font-size: 24px;
   }
-  
+.header__category{
+  color: #fff;
+  text-decoration: none;
+}
